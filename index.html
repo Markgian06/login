@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="description" content=" My Portfolio">
+         <meta name="keywords" content="Portfolio">
+         <meta name="author" content="Mark Gian T. Abejero">
+         <meta name="viewport" content="width=devices-width,intial=scale=1.0">
+             <title>Login and Sign Up</title>
+             <link rel="icon" href="image/invader-solid-24.png"/>
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+             <link rel="stylesheet" href="style.css"/>      
+     </head>  
+     <body>
+         <div class="container">
+         <div class="slider">
+         <div class="slide" id="loginSlide">
+             <form id="loginForm">
+                 <h2>Login</h2>
+                 <label for="username">Username:</label>
+                 <input type="text" id="username" name="username" required>
+
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password" required>
+    
+                 <button type="button" onclick="login()">Login</button>
+    
+                 <p class="signup-link">Don't have an account? <a href="#" onclick="showSlide('signupSlide')">Sign up</a></p>
+         <div class="social-login">
+                 <button class="circular-btn facebook-btn" data-social="Facebook"></button>
+                 <button class="circular-btn google-btn" data-social="Google"></button>
+                 <button class="circular-btn twitter-btn" data-social="Twitter"></button>
+                 <button class="circular-btn github-btn" data-social="GitHub"></button>
+         </div>  
+             </form>
+         </div>  
+         <div class="slide" id="signupSlide">
+             <form id="signupForm">
+                 <h2>Sign Up</h2>
+                 <label for="firstName">First Name:</label>
+                 <input type="text" id="firstName" name="firstName" required>
+    
+                 <label for="middleName">Middle Name:</label>
+                 <input type="text" id="middleName" name="middleName">
+    
+                 <label for="lastName">Last Name:</label>
+                 <input type="text" id="lastName" name="lastName" required>
+    
+                 <label for="newUsername">Username:</label>
+                 <input type="text" id="newUsername" name="newUsername" required>
+    
+                 <label for="newEmail">Email:</label>
+                 <input type="email" id="newEmail" name="newEmail" required>
+    
+                 <label for="newPassword">Password:</label>
+                 <input type="password" id="newPassword" name="newPassword" required>
+    
+                 <button type="button" onclick="register()">Register</button>
+    
+                 <p class="login-link">Already have an account? <a href="#" onclick="showSlide('loginSlide')">Login</a></p>
+             </form>
+         </div>
+         </div>
+         </div>   
+         <script src="script.js"></script>
+     </body>
+</html>
